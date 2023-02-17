@@ -1,0 +1,1369 @@
+
+body{
+margin: 0px;
+background-attachment: fixed;
+}
+::-webkit-scrollbar-thumb{
+  background: #3334f9;
+  width: 15px;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #3334f9;
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  width: 15px;
+  border-radius: 4px;
+}
+::-webkit-scrollbar{
+  width: 15px;
+  border-radius: 10px;
+}
+::selection{
+  background-color: #128979;
+}
+
+.section{
+  width: 25%;
+  height: 100%;
+  background-color: #121212;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  overflow-y: auto;
+  opacity: 0.9;
+  outline-color: 2px red;
+}
+.section:focus{
+  transform: scaleX(1.4);
+  cursor: e-resize;
+}
+li{
+  color:blue;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: agency fb;
+  list-style-type: none;
+  cursor: pointer;
+}
+.collapsible1{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible1:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content1 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  max-height: 0;
+}
+/* The Overlay (background) */
+.overlay1 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  margin-left: 25%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  opacity: 1;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.9s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content1 {
+  position: relative;
+  top: 20%; /* 20% from the top */
+  width: 89%; /* 79% width */
+  text-align: left;; /* Centered text/links */
+  margin-top: 10px; /* 10px top margin to avoid conflict with the close button on smaller screens */
+  opacity: 1;
+}
+
+/* The navigation links inside the overlay */
+.overlay1 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 1s; /* Transition effects on hover (color) */
+  opacity: 1 ;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay1 a:hover, .overlay1 a:focus {
+  color: #f1f1f1;
+  margin-right: 0px;
+}
+
+/* Position the close button (top right corner) */
+.overlay1 .closebtn1 {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  font-size: 90px;
+  margin: 3px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay1 a {font-size: 20px}
+  .overlay1 .closebtn {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+      margin-right: 3px;
+  }
+}
+/* The Overlay (background) */
+.overlay9 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  margin-left: 25%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  opacity: 0.95;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.9s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content9 {
+  position: relative;
+  top: 20%; /* 20% from the top */
+  width: 89%; /* 79% width */
+  text-align: left;; /* Centered text/links */
+  margin-top: 10px; /* 10px top margin to avoid conflict with the close button on smaller screens */
+
+}
+
+/* The navigation links inside the overlay */
+.overlay9 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 1s; /* Transition effects on hover (color) */
+  opacity: 1 ;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay9 a:hover, .overlay9 a:focus {
+  color: #f1f1f1;
+  margin-right: 0px;
+}
+
+/* Position the close button (top right corner) */
+.overlay9 .closebtn9 {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  font-size: 90px;
+  margin: 3px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay9 a {font-size: 20px}
+  .overlay9 .closebtn {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+      margin-right: 3px;
+  }
+}
+/* The Overlay (background) */
+.overlay2 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  margin-left: 25%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  opacity: 0.95;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.9s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content2 {
+  position: relative;
+  top: 20%; /* 20% from the top */
+  width: 89%; /* 79% width */
+  text-align: left;; /* Centered text/links */
+  margin-top: 10px; /* 10px top margin to avoid conflict with the close button on smaller screens */
+
+}
+
+/* The navigation links inside the overlay */
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 1s; /* Transition effects on hover (color) */
+  opacity: 1 ;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay2 a:hover, .overlay2 a:focus {
+  color: #f1f1f1;
+  margin-right: 0px;
+}
+
+/* Position the close button (top right corner) */
+.overlay2 .closebtn2 {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  font-size: 90px;
+  margin: 3px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay2 a {font-size: 20px}
+  .overlay2 .closebtn {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+      margin-right: 3px;
+  }
+}
+.overlay61 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  margin-left: 25%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  opacity: 0.95;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.9s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content61 {
+  position: relative;
+  top: 20%; /* 20% from the top */
+  width: 89%; /* 79% width */
+  text-align: left;; /* Centered text/links */
+  margin-top: 10px; /* 10px top margin to avoid conflict with the close button on smaller screens */
+
+}
+
+/* The navigation links inside the overlay */
+.overlay61 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 1s; /* Transition effects on hover (color) */
+  opacity: 1 ;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay61 a:hover, .overlay61 a:focus {
+  color: #f1f1f1;
+  margin-right: 0px;
+}
+
+/* Position the close button (top right corner) */
+.overlay61 .closebtn61 {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  font-size: 90px;
+  margin: 3px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay61 a {font-size: 20px}
+  .overlay61 .closebtn61 {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+      margin-right: 3px;
+  }
+}
+.overlay31 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  margin-left: 25%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  opacity: 0.95;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.9s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content31 {
+  position: relative;
+  top: 20%; /* 20% from the top */
+  width: 89%; /* 79% width */
+  text-align: left;; /* Centered text/links */
+  margin-top: 10px; /* 10px top margin to avoid conflict with the close button on smaller screens */
+
+}
+
+/* The navigation links inside the overlay */
+.overlay31 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 1s; /* Transition effects on hover (color) */
+  opacity: 1 ;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay31 a:hover, .overlay31 a:focus {
+  color: #f1f1f1;
+  margin-right: 0px;
+}
+
+/* Position the close button (top right corner) */
+.overlay31 .closebtn31 {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  font-size: 90px;
+  margin: 3px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay31 a {font-size: 20px}
+  .overlay31 .closebtn31 {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+      margin-right: 3px;
+  }
+}
+.overlay41 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  margin-left: 25%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  opacity: 0.95;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.9s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content41 {
+  position: relative;
+  top: 20%; /* 20% from the top */
+  width: 89%; /* 79% width */
+  text-align: left;; /* Centered text/links */
+  margin-top: 10px; /* 10px top margin to avoid conflict with the close button on smaller screens */
+
+}
+
+/* The navigation links inside the overlay */
+.overlay41 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 1s; /* Transition effects on hover (color) */
+  opacity: 1 ;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay41 a:hover, .overlay41 a:focus {
+  color: #f1f1f1;
+  margin-right: 0px;
+}
+
+/* Position the close button (top right corner) */
+.overlay41 .closebtn41 {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  font-size: 90px;
+  margin: 3px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay41 a {font-size: 20px}
+  .overlay41 .closebtn41 {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+      margin-right: 3px;
+  }
+}
+.collapsible2{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible2:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content2 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible3{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible3:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content3 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+}
+.collapsible4{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible4:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content4 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible5{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible5:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content5 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible6{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible6:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content6 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible7{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible7:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content7 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible8{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible8:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content8 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible9{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible9:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content9 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible10{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible10:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content10 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible11{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible11:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content11 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible12{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible12:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content12 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible13{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible13:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content13 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible14{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible14:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content14 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible15{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible15:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content15 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible16{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible16:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content16 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible17{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible17:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content17 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible18{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible18:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content18 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible19{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible19:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content19 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible20{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible20:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content20 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible21{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible21:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content21 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible22{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible22:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content22 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible23{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible23:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content23 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible24{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible24:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content24 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible25{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible25:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content25 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+.collapsible26{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible26:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content26 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+}
+.collapsible27{
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 4px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
+  margin-top: 2px;
+  padding-top: 3px;
+  outline: none;
+  width: 100%;
+  height: 10%;
+  background-color: #212322;
+}
+ .active, .collapsible27:active{
+  background-color:transparent ;
+  opacity: 0.8;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.content27 {
+  padding: 0 1px;
+  background-color: inherit;
+  width: 96%;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+}
+.download{
+
+}
+.download1{
+  width: 37%;
+  height: auto;
+  border-radius: 5px;
+  background-color: #212223;
+  margin: 5%;
+  position: absolute;
+}
+.download2{
+  width: 37%;
+  height: auto;
+  border-radius: 5px;
+  background-color: #212223;
+  margin: 5%;
+  float: right;
+}
+
+#bullock{
+  width: 75%;
+  height:690px;
+  position: fixed;
+  float: none;
+  display: inline-block;
+  background-position: center;
+  backface-visibility: visible;
+  border: 2px solid grey;
+  background-image: url(Best-Background-Wallpapers-71+-images-.jpg);
+  background-attachment: fixed;
+  background-position:center;
+  background-blend-mode: hard-light;
+  overflow-y: hidden;
+  margin-left: 25%;
+  background-repeat: no-repeat;
+  background-size: 1366px;
+  overflow: auto;
+  padding: 3% 0;
+}
+.winpic{
+  width: 96%;
+  height: 50%;
+  background-image: url(hellsing-Copy.jpg);
+  border: 3px solid rgba(53, 23, 23, 0.904);
+  margin-top: 4rem;
+  margin-left: 2%;
+  border-radius: 10px;
+}
+button{
+  width: 20rem;
+  border-radius: 5px;
+  background-color: #318CE7;
+  height: 2.2rem;
+  line-height: 5px;
+  font-family: titling;
+  font-size: 1.9rem;
+}
+em{
+  cursor: pointer;
+}
+h1{
+  margin: 0px;
+  border: 0px;
+  color: rgba(175, 172, 202, 0.945);
+  padding-left: 6%;
+  font-size: 6rem;
+  letter-spacing: 5px;
+  padding-top: 70px;
+  font-family: papyrus;
+}
+/* When the input field gets focus, change its width to 100% */
+input[type=search]:focus {
+  border-radius: 40px;
+  width: 290px;
+  outline: none;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  height: 36px;
+}
+.finder{
+  margin-left: 23px;
+  margin-top: 20px;
+  padding: 7px;
+  width: 90px;
+  height: 30px;
+  font-size: 1rem;
+  font-family: tempus sans itc;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+.linker{
+  font-size: 0.9rem;
+  padding-bottom: 1%;
+  margin-top: 0%;
+  margin-left: 10%;
+  color: #13c9b3;
+}
+.weblink{
+  background-color: #121212;
+  opacity: 0.9;
+}
+span{
+  color:blue;
+  padding-right: 40px;
+  line-height: -4px;
+}
+p{
+  color: #cbcccd;
+  font-size: 2rem;
+  font-family: bell mt;
+  padding: 50px;
+}
+b{
+  font-family: tempis sans itc;
+}
+.glowing{
+  font-size: 5rem;
+  color: #bbb;
+  text-align: center;
+  -webkit-animation: glow 400ms ease-in-out infinite alternate;
+  -moz-animation: glow 400ms ease-in-out infinite alternate;
+  animation: glow 400ms ease-in-out infinite alternate;
+  font-family: castellar;
+
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 50px rgb(56, 74, 77), 0 0 60px rgb(49, 65, 102), 0 0 70px #390249, 0 0 80px #54036d, 0 0 90px #3f0b4e, 0 0 100px #360241, 0 0 110px #8601AF;
+  }
+  to {
+    text-shadow: 0 0 50px #fff, 0 0 60px #ff4da6, 0 0 70px #000080, 0 0 80px #000080, 0 0 90px #010149e8, 0 0 100px #000080, 0 0 110px #000080;
+  }
+}
